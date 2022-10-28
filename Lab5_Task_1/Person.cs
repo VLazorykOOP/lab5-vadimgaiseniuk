@@ -8,7 +8,7 @@ public class Person
     private string Sex { get; }
     private int Age { get; }
 
-    protected Person(string name, string surname, string patronymic, string sex, int age) =>
+    public Person(string name, string surname, string patronymic, string sex, int age) =>
         (Name, Surname, Patronymic, Sex, Age) = (name, surname, patronymic, sex, age);
 
     public virtual void Show()
