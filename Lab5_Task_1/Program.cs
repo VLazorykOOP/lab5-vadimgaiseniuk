@@ -4,10 +4,10 @@ public static class Program
 {
     public static void Main()
     {
-        Person person = new Person("Vadim", "Gaiseniuk", "Anatoliyovich", "Male", 19);
-        Employee employee = new Employee("Vadim", "Gaiseniuk", "Anatoliyovich", "Male", 19, 2.1);
-        Worker worker = new Worker("Vadim", "Gaiseniuk", "Anatoliyovich", "Male", 19, 2.6, "Microsoft");
-        Engineer engineer = new Engineer("Vadim", "Gaiseniuk", "Anatoliyovich", "Male", 19, 1.4, "Bachelor");
+        Person person = new Employee("Vadim", "Gaiseniuk", "Anatoliyovich", "Male", 19, 0);
+        Person employee = new Employee("Vadim", "Gaiseniuk", "Anatoliyovich", "Male", 19, 2.1);
+        Person worker = new Worker("Vadim", "Gaiseniuk", "Anatoliyovich", "Male", 19, 2.6, "Microsoft");
+        Person engineer = new Engineer("Vadim", "Gaiseniuk", "Anatoliyovich", "Male", 19, 1.4, "Bachelor");
         
         person.Show();
         Console.WriteLine("---------------------------------------------");

@@ -1,6 +1,6 @@
 namespace Lab5_Task_1;
 
-public class Person
+public abstract class Person
 {
     private string Name { get; }
     private string Surname { get; }
@@ -8,7 +8,7 @@ public class Person
     private string Sex { get; }
     private int Age { get; }
 
-    public Person(string name, string surname, string patronymic, string sex, int age) =>
+    protected Person(string name, string surname, string patronymic, string sex, int age) =>
         (Name, Surname, Patronymic, Sex, Age) = (name, surname, patronymic, sex, age);
 
     public virtual void Show()

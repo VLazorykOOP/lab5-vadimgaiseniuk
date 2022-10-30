@@ -1,6 +1,6 @@
 namespace Lab5_Task_2;
 
-public class Person
+public abstract class Person
 {
     private string Name { get; }
     private string Surname { get; }
@@ -19,7 +19,7 @@ public class Person
     {
         (Name, Surname, Patronymic, Sex, Age) = (name, surname, patronymic, sex, age);
         
-        Console.WriteLine("Constructor of class Person");
+        Console.WriteLine("\nConstructor of class Person");
     }
 
     public virtual void Show()
